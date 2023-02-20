@@ -1,16 +1,17 @@
-
+# Super Class
 class Plant:
-    def __init__(self,color):
+    def __init__(self, color):
         self.__color = color
-
 
     def get_color(self):
         return self.__color
 
+# Sub-Class
+
 
 class Flower(Plant):
-    def __init__(self,color, petals):
-        Plant.__init__(self,color)
+    def __init__(self, color, petals):
+        Plant.__init__(self, color)
 
         self.__petals = petals
 
