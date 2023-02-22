@@ -7,9 +7,9 @@ class Person:
         self.__phone = phone
 
     def print_person(self):
-        print(self.__name)
-        print(self.__address)
-        print(self.__phone)
+        print('Name:', self.__name)
+        print('Address:', self.__address)
+        print("Phone:", self.__phone)
 
 
 class Customer(Person):
@@ -21,8 +21,10 @@ class Customer(Person):
         self.__mailing_list = mailing_list
 
     def print_person(self):
-        print(self.__name)
-        print(self.__address)
-        print(self.__phone)
-        print(self.__cust_number)
-        print(self.__mailing_list)
+
+        Person.print_person(self)
+        print('Customer Number:', self.__cust_number)
+        if self.__mailing_list:
+            print("On Mailing list: Yes")
+        else:
+            print("On Mailing list: Yes")
